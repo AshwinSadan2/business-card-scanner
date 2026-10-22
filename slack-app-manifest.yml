@@ -1,0 +1,27 @@
+# Paste this into https://api.slack.com/apps -> Create New App -> From a manifest
+display_information:
+  name: Card Scanner
+  description: Reads business card photos and adds the people to Attio
+features:
+  bot_user:
+    display_name: Card Scanner
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - channels:history
+      - channels:read
+      - groups:history
+      - groups:read
+      - chat:write
+      - files:read
+settings:
+  event_subscriptions:
+    bot_events:
+      - message.channels
+      - message.groups
+  interactivity:
+    is_enabled: false
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

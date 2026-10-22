@@ -1,0 +1,14 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and local data (contact details, run history)
+logs/
+data/
+
+# Dependencies and OS clutter
+node_modules/
+.DS_Store
